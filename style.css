@@ -16,15 +16,28 @@ body {
   display: grid;
   place-items: center;
 
-  background-image: linear-gradient(to bottom, #fe1482, #ff277b, #ff3474, #ff406e, #ff4b68, #ff5461, #ff5d5b, #ff6655, #ff704c, #fd7b44, #fa863c, #f69035);
+  background-image: linear-gradient(
+    to bottom,
+    #fe1482,
+    #ff277b,
+    #ff3474,
+    #ff406e,
+    #ff4b68,
+    #ff5461,
+    #ff5d5b,
+    #ff6655,
+    #ff704c,
+    #fd7b44,
+    #fa863c,
+    #f69035
+  );
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 100%;
-
-  color: var(--grey);
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -32,6 +45,12 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: var(--grey);
+}
+
+.githubLink:hover {
+  transform: scale(1.1);
+  color: white;
 }
 
 .avatar {
@@ -89,4 +108,12 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+li img {
+  border-radius: 5px;
+}
+
+li img:hover {
+  transform: scale(1.1);
 }
