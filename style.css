@@ -16,7 +16,7 @@ body {
   display: grid;
   place-items: center;
 
-  background-color: var(--black);
+  background-image: linear-gradient(to bottom, #fe1482, #ff277b, #ff3474, #ff406e, #ff4b68, #ff5461, #ff5d5b, #ff6655, #ff704c, #fd7b44, #fa863c, #f69035);
 }
 
 main {
