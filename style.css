@@ -63,19 +63,22 @@ main {
 .faixa {
   position: absolute;
   width: 64px;
-  height: 170px;
-  left: 48vw;
+  height: 158px;
+  left: 47vw;
   top: 0px;
 
   background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .quebra {
   position: absolute;
   width: 80px;
   height: 8px;
-  left: 47.5vw;
-  top: 164px;
+  left: 46vw;
+  top: 156px;
 
   /* Neutral Colors/Grey/Grey 900 */
 
@@ -171,5 +174,64 @@ li img:hover {
 
   .quebra {
     left: 45vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .faixa {
+    left: 45vw;
+  }
+
+  .quebra {
+    left: 43.7vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .faixa {
+    left: 44vw;
+    height: 138px;
+  }
+
+  .quebra {
+    left: 42vw;
+    top: 136px;
+  }
+
+  .container {
+    width: 320px;
+    margin-top: 110px;
+  }
+
+  .avatar {
+    width: 8rem;
+    margin: 0 auto 0;
+  }
+
+  .avatar > img {
+    width: 9rem;
+    height: 11rem;
+  }
+
+  .container p {
+    padding: 0 1rem 0;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    margin-top: 70px;
+  }
+
+  .faixa {
+    height: 98px;
+  }
+
+  .quebra {
+    top: 96px;
   }
 }
